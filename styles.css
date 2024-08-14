@@ -1,11 +1,9 @@
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #1f2937;
     color: #F9FAF8;
-    margin: 0px;
-    padding: 0px;
 
 }
 
@@ -13,4 +11,12 @@
     display: flex;
     gap: 1rem;
     list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    margin: 0px;
+
 }
