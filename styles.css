@@ -4,19 +4,204 @@
     align-items: center;
     background-color: #1f2937;
     color: #F9FAF8;
-
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;  
+    font-size: 24px; 
 }
 
-.header-right{
+ul{
     display: flex;
+    flex-direction: row;
     gap: 1rem;
     list-style: none;
+    font-weight: 300;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
     margin: 0px;
-
 }
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    background-color: #1f2937;
+    justify-content: center;
+    gap: 225px;
+    color: #F9FAF8;
+    padding-top: 110px;
+    padding-bottom: 140px;
+}
+
+/*
+There is an another way to bring boxes closer together,
+You can use justify-content: center and then add a gap between them
+In this solution, I have just used negative margins because I thought it was interesting
+*/
+
+.hero .left-text{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    flex-direction: column;
+    width: 450px;
+    
+}
+
+.hero .left-text .title{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero .left-text .subtitle{
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero .right-image{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(36, 54, 86);
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: -190px;
+}
+
+.left-text button{
+    width: 140px;
+    padding: 10px;
+    background-color: #3882F6;
+    color:#E5E7EB;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    font-weight: 900;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.gallery-header{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.card-stack{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border-width: 3px;
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-color: #3882F6;
+}
+
+.card-text-row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+}
+ 
+.card-text{
+    margin-top: 5px;
+    color: #1f2937;
+    font-family: "Roboto", sans-serif;
+    height: 100px;
+    width: 156px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.main{
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 300;
+    margin-left: 320px;
+    margin-right: 320px;
+    margin-top: 140px;
+}
+
+.credit{
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-right: 350px;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+.ad{
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #3882F6;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ad-text{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    color:#E5E7EB;
+}
+
+.ad-text .top{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.ad button{
+    border-style: solid;
+    border-color: #E5E7EB;
+    width: 100px;
+    height: 30px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    color:#E5E7EB
+}
+
+.footer{
+    background-color: #1f2937;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    font-family: "Roboto", sans-serif;
+    height: 100px;
+}
+
